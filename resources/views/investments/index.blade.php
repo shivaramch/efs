@@ -1,40 +1,48 @@
 @extends('app')
 
 @section('content')
-    <h1>Customer</h1>
-    <a href="{{url('/customers/create')}}" class="btn btn-success">Create Customer</a>
+    <script>
+        function ConfirmDelete()
+        {
+            var x = confirm("Are you sure you want to delete?");
+            if (x)
+                return true;
+            else
+                return false;
+        }
+    </script>
+    <h1>Investment</h1>
+    <a href="{{url('/investments/create')}}" class="btn btn-success">Create Investment</a>
     <hr>
     <table class="table table-striped table-bordered table-hover">
         <thead>
         <tr class="bg-info">
-            <th> Cust Number</th>
-            <th>Name</th>
-            <th>Address</th>
-            <th>City</th>
-            <th>State</th>
-            <th>Zip</th>
-            <th>Primary Email</th>
-            <th>Home Phone</th>
-            <th>Cell Phone</th>
+            <th>Cust No</th>
+            <th>Cust Name</th>
+            <th>Category</th>
+            <th>Description</th>
+            <th>Acquired Value</th>
+            <th>Acquired Date</th>
+            <th>Recent Value</th>
+            <th>Recent Date</th>
             <th colspan="3">Actions</th>
         </tr>
         </thead>
         <tbody>
-        @foreach ($customers as $customer)
+        @foreach ($investments as $investment)
             <tr>
-                <td>{{ $customer->cust_number }}</td>
-                <td>{{ $customer->name }}</td>
-                <td>{{ $customer->address }}</td>
-                <td>{{ $customer->city }}</td>
-                <td>{{ $customer->state }}</td>
-                <td>{{ $customer->zip }}</td>
-                <td>{{ $customer->email }}</td>
-                <td>{{ $customer->home_phone }}</td>
-                <td>{{ $customer->cell_phone }}</td>
-                <td><a href="{{url('customers',$customer->id)}}" class="btn btn-primary">Read</a></td>
-                <td><a href="{{route('customers.edit',$customer->id)}}" class="btn btn-warning">Update</a></td>
+                <td>{{ $investment->customer->cust_number }}</td>
+                <td>{{ $investment->customer->name }}</td>
+                <td>{{ $investment->category }}</td>
+                <td>{{ $investment->description }}</td>
+                <td>{{ $investment->acquired_value }}</td>
+                <td>{{ $investment->acquired_date }}</td>
+                <td>{{ $investment->recent_value }}</td>
+                <td>{{ $investment->recent_date }}</td>
+                <td><a href="{{url('investments',$investment->id)}}" class="btn btn-primary">Read</a></td>
+                <td><a href="{{route('investments.edit',$investment->id)}}" class="btn btn-warning">Update</a></td>
                 <td>
-                    {!! Form::open(['method' => 'DELETE', 'route'=>['customers.destroy', $customer->id]]) !!}
+                    {!! Form::open(['method' => 'DELETE', 'route'=>['investments.destroy', $investment->id],'onsubmit' => 'return ConfirmDelete()']) !!}
                     {!! Form::submit('Delete', ['class' => 'btn btn-danger']) !!}
                     {!! Form::close() !!}
                 </td>

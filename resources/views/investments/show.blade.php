@@ -1,29 +1,33 @@
 @extends('app')
 @section('content')
-    <h1>Stock </h1>
+    <h1>Investment</h1>
     <div class="container">
         <table class="table table-striped table-bordered table-hover">
             <tbody>
             <tr class="bg-info">
             <tr>
-                <td>Stock Symbol</td>
-                <td><?php echo ($stock['symbol']); ?></td>
+                <td>Investment Category</td>
+                <td><?php echo ($investment['category']); ?></td>
             </tr>
             <tr>
-                <td>Stock Name</td>
-                <td><?php echo ($stock['name']); ?></td>
+                <td>Description</td>
+                <td><?php echo ($investment['description']); ?></td>
             </tr>
             <tr>
-                <td>Number of Shares</td>
-                <td><?php echo ($stock['shares']); ?></td>
+                <td>Acquired Value</td>
+                <td><?php echo ($investment['acquired_value']); ?></td>
             </tr>
             <tr>
-                <td>Purchase Price </td>
-                <td><?php echo ($stock['purchase_price']); ?></td>
+                <td>Acquired Date</td>
+                <td><?php echo ($investment['acquired_date']); ?></td>
             </tr>
             <tr>
-                <td>Date Purchased</td>
-                <td><?php echo ($stock['purchased']); ?></td>
+                <td>Recent Value</td>
+                <td><?php echo ($investment['recent_value']); ?></td>
+            </tr>
+            <tr>
+                <td>Recent Date</td>
+                <td><?php echo ($investment['recent_date']); ?></td>
             </tr>
             </tbody>
         </table>
