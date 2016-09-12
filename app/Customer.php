@@ -32,3 +32,4 @@ class Customer extends Model
 
 
 }
+

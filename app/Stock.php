@@ -21,3 +21,4 @@ class Stock extends Model
         return $this->belongsTo('App\Customer');
     }
 }
+

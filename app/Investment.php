@@ -6,7 +6,6 @@ use Illuminate\Database\Eloquent\Model;
 
 class Investment extends Model
 {
-    //
     protected $fillable=[
         'customer_id',
         'category',
@@ -15,10 +14,9 @@ class Investment extends Model
         'acquired_date',
         'recent_value',
         'recent_date',
-
     ];
-
-    public function customer() {
+    public function customer()
+    {
         return $this->belongsTo('App\Customer');
     }
 }
