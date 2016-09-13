@@ -55,7 +55,8 @@
                 <br>
                 <br>
                 <br>
-                <img src="../public/wip.png" style="width:150px;height:125px;">
+                <img src="{{url('../public/wip.png')}}" alt="Image" style="width:150px;height:125px;"/>
+                <!--<img src="../public/wip.png" style="width:150px;height:125px;">-->
                 <div>Come back later for more!</div>
             </div>
         </div>
