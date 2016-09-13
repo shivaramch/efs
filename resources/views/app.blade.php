@@ -8,7 +8,7 @@
 </head>
 <body>
 <div class="container">
-    <a href="../public/index.php">Home</a> |
+    <a href="http://efs-a1.herokuapp.com/">Home</a> |
     <a href="{{ action('CustomerController@index') }}">Customers</a> |
     <a href="{{ action('StockController@index') }}">Stocks</a> |
     <a href="{{ action('InvestmentController@index') }}">Investments</a>

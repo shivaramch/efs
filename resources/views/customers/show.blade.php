@@ -31,6 +31,10 @@
                 <td><?php echo ($customer['zip']); ?></td>
             </tr>
             <tr>
+                <td>Primary Email</td>
+                <td><?php echo ($customer['email']); ?></td>
+            </tr>
+            <tr>
                 <td>Home Phone</td>
                 <td><?php echo ($customer['home_phone']); ?></td>
             </tr>

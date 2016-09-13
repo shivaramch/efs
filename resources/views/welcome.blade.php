@@ -40,7 +40,7 @@
             <div class="content">
                 <img src="https://upload.wikimedia.org/wikipedia/commons/1/1e/Bald_Eagle_Portrait.jpg" alt="Eagle Financial Services" style="width:200px;height:150px;">
                 <div class="title">Eagle Financial Services</div>
-                <a style="color: blue;font-size:100%;font-family:Calibri" href = "customers">Begin Here</a>
+                <a style="color: blue;font-size:150%;font-family:Calibri" href = "customers">Begin Here</a>
             </div>
         </div>
     </body>
