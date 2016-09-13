@@ -25,7 +25,7 @@
     </div>
     <div class="form-group">
         {!! Form::label('purchased', 'Purchase Date:') !!}
-        {!! Form::text('purchased',null,['class'=>'form-control']) !!}
+        {!! Form::text('purchased',null,['class'=>'form-control'])  !!}
     </div>
 
 

@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html>
     <head>
-        <title>Laravel</title>
+        <title>Eagle Financial Services</title>
 
         <link href="https://fonts.googleapis.com/css?family=Lato:100" rel="stylesheet" type="text/css">
 
@@ -16,7 +16,7 @@
                 width: 100%;
                 display: table;
                 font-weight: 100;
-                font-family: 'Lato';
+                font-family: 'Calibri';
             }
 
             .container {
@@ -38,7 +38,9 @@
     <body>
         <div class="container">
             <div class="content">
-                <div class="title">Laravel 5</div>
+                <img src="https://upload.wikimedia.org/wikipedia/commons/1/1e/Bald_Eagle_Portrait.jpg" alt="Eagle Financial Services" style="width:200px;height:150px;">
+                <div class="title">Eagle Financial Services</div>
+                <a style="color: blue;font-size:100%;font-family:Calibri" href = "customers">Begin Here</a>
             </div>
         </div>
     </body>

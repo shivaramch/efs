@@ -8,10 +8,11 @@
 </head>
 <body>
 <div class="container">
+    <a href="http://localhost/efs/public/">Home</a> |
     <a href="{{ action('CustomerController@index') }}">Customers</a> |
     <a href="{{ action('StockController@index') }}">Stocks</a> |
     <a href="{{ action('InvestmentController@index') }}">Investments</a>
-</div>
+    </div>
 <hr>
 <div class="container">
     @yield('content')
