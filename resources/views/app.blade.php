@@ -7,6 +7,12 @@
 
 </head>
 <body>
+<style>
+    body
+    {
+        background-color: beige;
+    }
+</style>
 <div class="container">
     <a href="http://efs-a1.herokuapp.com/">Home</a> |
     <a href="{{ action('CustomerController@index') }}">Customers</a> |

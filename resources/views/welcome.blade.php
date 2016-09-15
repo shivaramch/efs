@@ -55,8 +55,7 @@
                 <br>
                 <br>
                 <br>
-                <img src="{{url('../public/wip.png')}}" alt="Image" style="width:150px;height:125px;"/>
-                <!--<img src="../public/wip.png" style="width:150px;height:125px;">-->
+                <img src="http://cucsa.org.uk/wp-content/uploads/2015/10/Work_In_Progress.png" style="width:150px;height:125px;">
                 <div>Come back later for more!</div>
             </div>
         </div>
