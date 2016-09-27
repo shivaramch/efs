@@ -1,6 +1,16 @@
 @extends('app')
 
 @section('content')
+    <script>
+        function ConfirmDelete()
+        {
+            var x = confirm("Are you sure you want to delete?");
+            if (x)
+                return true;
+            else
+                return false;
+        }
+    </script>
     <h1>Customer</h1>
     <a href="{{url('/customers/create')}}" class="btn btn-success">Create Customer</a>
     <hr>
