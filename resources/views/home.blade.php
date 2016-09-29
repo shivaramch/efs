@@ -36,12 +36,16 @@
 </div>
 <br>
 <br>
+<div class="col-md-3">
+    <script src="http://nmp.newsgator.com/NGBuzz/buzz.ashx?buzzId=81517&apiToken=955A45FCB27F492685F2507FA08073E7&trkP=&trkM=A8E89764-14DE-8FB7-3775-0495B7323A8F" type="text/javascript"></script>
+</div>
 <div class="col-lg-3">
     <iframe src="http://tsw.forexprostools.com?&forex=1,2,3,5,7,9,10&commodities=8830,8836,8831,8849,8833,8862,8832&indices=175,166,172,27,167,40830,179&stocks=284,280,282,287,286,288,295&tabs=1,2,3,4" width="317" height="467"></iframe>
 </div>
 <div class="col-md">
     <iframe frameborder="0" scrolling="no" height="375" width="197" allowtransparency="true" marginwidth="0" marginheight="0" src="http://tools.investing.com/currency-converter/index.php?from=17&to=12"></iframe>
 </div>
+
 <br>
 <br>
 <br>

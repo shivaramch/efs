@@ -18,10 +18,12 @@
     <style>
         body {
             font-family: 'Lato';
+            background-color: beige;
         }
 
         .fa-btn {
             margin-right: 6px;
+            background-color: beige;
         }
     </style>
 </head>

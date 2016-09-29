@@ -1,7 +1,17 @@
 @extends('layouts.app')
 
 @section('content')
-<div class="container">
+    <div class="ticker">
+        <!--START theFinancials.com Content-->
+        <!--copyright theFinancials.com - All Rights Reserved-->
+        <!--Get Help by Calling 1.843.886.3635-->
+        <!--specify 'bgcolor', 'fontcolor' and 'bordercolor' using 3- or 6-character color codes - DO NOT include '#' in the color codes-->
+        <!--use 'numtileswide=1' to display the widget vertically, 'numtileswide=0' to display it horizontally, or use another value for other layouts-->
+        <!--set 'scrollSpeedFromZeroToTen' to 0 to disable scrolling, or use value from 1 (slow) to 10 (fast) to control scroll speed-->
+        <iframe style='width: 100vw; height: 75px; position: relative' src='http://www.thefinancials.com/ShowPanel.aspx?pid=free&id=577&bgcolor=003366&fontcolor=ffffff&fontsize=13&bordercolor=c0c0c0&numtileswide=0&mode=iframe&scrollSpeedFromZeroToTen=5' scrolling='auto' marginheight='0' marginwidth='0' hspace='0' vspace='0' frameborder='no' allowtransparency='true'></iframe>
+        <!--END theFinancials.com Content-->
+    </div>
+  <div class="container">
     <div class="row">
         <div class="col-md-10 col-md-offset-1">
             <div class="panel panel-default">
@@ -15,12 +25,6 @@
         </div>
     </div>
 </div>
-<style>
-    .links{
-        display: inline;
-        background-color: beige;
-    }
-</style>
 <div class="links">
     <!-- Example row of columns -->
     <div class="row">
