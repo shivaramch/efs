@@ -14,10 +14,11 @@
     }
 </style>
 <div class="container">
-    <a href="http://efs-a1.herokuapp.com/">Home</a> |
+    <a href="{{ url('/home') }}">Home</a> |
     <a href="{{ action('CustomerController@index') }}">Customers</a> |
     <a href="{{ action('StockController@index') }}">Stocks</a> |
-    <a href="{{ action('InvestmentController@index') }}">Investments</a>
+    <a href="{{ action('InvestmentController@index') }}">Investments</a> |
+    <a href="{{ action('MutualfundController@index') }}">MutualFunds</a>
     </div>
 <hr>
 <div class="container">
