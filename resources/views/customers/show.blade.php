@@ -162,15 +162,46 @@
 
             </tbody>
         </table>
-        <table class="table table-striped table-bordered table-hover">
-            <tr> <th>Total of Initial Investment Portfolio</th>
-                <th>Total of Current Investment Portfolio</th>
-            </tr>
+            <table class="table table-striped table-bordered table-hover">
+                <tr> <th>Total of Initial Stock Portfolio</th>
+                    <th>Total of Current Stock Portfolio</th>
+                </tr>
+                <tr>
+                    <td>${{$total_investment_acquired_value}}</td>
+                    <td>${{$total_investment_recent_value}}</td>
+                </tr>
+            </table>
+
+        </div>
+        <h3>Mutual Funds </h3>
+        <div class="container">
+            <table class="table table-striped table-bordered table-hover">
+                <thead>
+        <tr class="bg-info">
+            <th>Cust No</th>
+            <th>Mutual Fund Manager</th>
+            <th>Mutual Fund Type</th>
+            <th>Classification</th>
+            <th>Net Asset Value</th>
+            <th>Annual Return</th>
+            <th>Date Purchased</th>
+            <th>Date Returned</th>
+
+        </tr>
+        </thead>
+        <tbody>
+        @foreach ($customer->mutualfunds as $mutualfund)
             <tr>
-                <td>${{$total_investment_acquired_value}}</td>
-                <td>${{$total_investment_recent_value}}</td>
-            </tr>
-        </table>
+                <td>{{ $mutualfund->customer->cust_number }}</td>
+                <td>{{ $mutualfund->fund_manager }}</td>
+                <td>{{ $mutualfund->fund_type }}</td>
+                <td>{{ $mutualfund->classification }}</td>
+                <td>{{ $mutualfund->net_asset_value }}</td>
+                <td>{{ $mutualfund->annual_return }}</td>
+                <td>{{ $mutualfund->purchased }}</td>
+                <td>{{ $mutualfund->returned }}</td>
+        @endforeach
+                </table>
     </div>
     <h2>Summary of Portfolios</h2>
     <table class="table table-striped table-bordered table-hover">
