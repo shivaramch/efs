@@ -173,7 +173,7 @@
             </table>
 
         </div>
-        <h3>Mutual Funds </h3>
+       <!-- <h3>Mutual Funds </h3>
         <div class="container">
             <table class="table table-striped table-bordered table-hover">
                 <thead>
@@ -202,7 +202,7 @@
                 <td>{{ $mutualfund->returned }}</td>
         @endforeach
                 </table>
-    </div>
+    </div>-->
     <h2>Summary of Portfolios</h2>
     <table class="table table-striped table-bordered table-hover">
         <tr> <th>Total of Initial Portfolio</th>
