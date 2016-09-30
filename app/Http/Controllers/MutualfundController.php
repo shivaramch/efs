@@ -20,7 +20,7 @@ class MutualfundController extends Controller
     {
         $mutualfund = Mutualfund::findOrFail($id);
 
-        return view('mutualfunds.show',compact('mutualfunds'));
+        return view('mutualfunds.show',compact('mutualfund'));
     }
 
     public function create()
@@ -39,7 +39,7 @@ class MutualfundController extends Controller
     public function edit($id)
     {
         $mutualfund=Mutualfund::find($id);
-        return view('mutualfunds.edit',compact('mutualfunds'));
+        return view('mutualfunds.edit',compact('mutualfund'));
     }
     public function update($id,Request $request)
     {

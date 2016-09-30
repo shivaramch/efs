@@ -182,4 +182,7 @@
             <td>${{$total_investment_recent_value+$total_stock_current_value}}</td>
         </tr>
     </table>
+
+    <a href="{{url('previousPage()')}}" class="btn btn-success">previous</a>
+    <a href="{{url('nextPage()')}}" class="btn btn-success">next</a>
 @stop

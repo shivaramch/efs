@@ -31,7 +31,7 @@
         <tbody>
         @foreach ($mutualfunds as $mutualfund)
             <tr>
-                <td>{{ $mutualfund->customer->cust_id }}</td>
+                <td>{{ $mutualfund->customer->cust_number }}</td>
                 <td>{{ $mutualfund->fund_manager }}</td>
                 <td>{{ $mutualfund->fund_type }}</td>
                 <td>{{ $mutualfund->classification }}</td>

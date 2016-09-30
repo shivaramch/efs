@@ -6,6 +6,10 @@
             <tbody>
             <tr class="bg-info">
             <tr>
+                <td>Customer Name</td>
+                <td><?php echo ($mutualfund['ccustomer_name']); ?></td>
+            </tr>
+            <tr>
                 <td>Mutual Fund Manager</td>
                 <td><?php echo ($mutualfund['fund_manager']); ?></td>
             </tr>
